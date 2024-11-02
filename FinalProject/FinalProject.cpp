@@ -92,6 +92,10 @@ int main() {
 
     if (!isDiagonallyDominant(A)) {
         cout << "The matrix is not diagonally dominant. The Jacobi and Gauss-Seidel methods may not converge.\n";
+        // Wait for user to press Enter before closing
+            cout << "Press Enter to exit...";
+            cin.ignore();  // Ignore any leftover newline character
+            cin.get();
         return 1;
     }
 
